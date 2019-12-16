@@ -25,8 +25,8 @@ class Floater //Do NOT modify the Floater class! Make changes in the Spaceship c
   public void move ()   //move the floater in the current direction of travel
   {      
     //change the x and y coordinates by myDirectionX and myDirectionY       
-    myCenterX += myDirectionX;    
-    myCenterY += myDirectionY;     
+    myCenterX +=  .5 * myDirectionX;    
+    myCenterY +=  .5 * myDirectionY;     
 
     //wrap around screen    
     if(myCenterX >width)
